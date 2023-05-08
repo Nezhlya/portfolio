@@ -1,0 +1,39 @@
+@media (max-width: 653px) {
+  .navbar-brand {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  h1 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  .col-sm-6 {
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+  body {
+    margin: 10px;
+  }
+  .about {
+    font-size: 15px;
+  }
+}
+
+.col-sm-6 {
+  background-color: rgb(225, 237, 243);
+  border-radius: 10px;
+}
+.about {
+  font-size: 20px;
+}
