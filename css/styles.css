@@ -1,11 +1,53 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+header{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr;
+  grid-template-areas:
+  "me header header"
+  "me header header"
+  "me about contact"
+  ;
+text-align: center;
+ background: linear-gradient(95deg, rgb(251, 254, 251) 0%, rgb(230, 189, 216) 100%);
+}
+.header{
+  padding:20%;
+  grid-area: header;
+}
+
+.me{
+  max-width: 100%;
+  max-height:100%;
+  grid-area: me;
+}
+.about{
+  grid-area: about;
+}
+.contact{
+  grid-area: contact;
+}
+.navbar-brand{
+  border-style: double;
+  padding: 5px;
+}
+
+
 @media (max-width: 653px) {
   .navbar-brand {
     font-size: 15px;
     font-weight: 700;
   }
+
   h1 {
     font-size: 20px;
     font-weight: 700;
+    
   }
   h2 {
     font-size: 18px;
@@ -13,6 +55,7 @@
   h3 {
     font-size: 15px;
   }
+ 
   .col-sm-6 {
     font-size: 15px;
     margin: 0 auto;
@@ -22,9 +65,7 @@
   p {
     font-size: 13px;
   }
-  body {
-    margin: 10px;
-  }
+ 
   .about {
     font-size: 15px;
   }
