@@ -3,78 +3,116 @@
 body {
   margin: 0;
   padding: 0;
-}
-header{
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows:1fr 1fr;
-  grid-template-areas:
-  "me header header"
-  "me header header"
-  "me about contact"
-  ;
-text-align: center;
- background: linear-gradient(95deg, rgb(251, 254, 251) 0%, rgb(230, 189, 216) 100%);
-}
-.header{
-  padding:20%;
-  grid-area: header;
+   background: linear-gradient(95deg, rgb(251, 254, 251) 0%, rgb(164, 141, 156) 100%);
 }
 
-.me{
-  max-width: 100%;
-  max-height:100%;
-  grid-area: me;
+.Background-fixed {
+  background-attachment: fixed;
+  background-position: center;
+}
+.ImageBackgroundWrap {
+  width: auto;
+  height: auto;
+  background-size: contain;
+  position: relative;
+  z-index: 1;
+  background-image: url("./img/me.jpg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  
+}
+
+.ImageInnerWrap {
+  position: relative;
+    z-index: 2;
+  max-width: 80%;
+  margin: 0 auto;
+  padding-top: 20%;
+padding-left:30%;
+padding-bottom: 5%;
+}
+.TextBackground {
+  background-color: rgba(124, 124, 124, 0.83);
+   padding: 5%;
+   color: white;
+   text-align: center;
+  
+}
+.TextBackground:hover{
+  background-color: rgba(247, 244, 244, 0.83);
+   color: black;
+   text-align: center;
 }
 .about{
-  grid-area: about;
+  font-size: 25px;
+  margin:3%;
+  font-weight: 500;
+  background-color: rgb(230, 224, 224);
 }
-.contact{
-  grid-area: contact;
+ .about:hover{
+background-color: rgb(77, 70, 70);
+color: white;
 }
+
 .navbar-brand{
   border-style: double;
   padding: 5px;
 }
 
 
-@media (max-width: 653px) {
-  .navbar-brand {
-    font-size: 15px;
-    font-weight: 700;
+
+
+@media only screen and (max-width:768px){
+ 
+  h1 , h2, h3{
+    font-size: 20px;
+    font-weight: 400;
+  }
+  h1{
+    font-weight: 600;
   }
 
-  h1 {
-    font-size: 20px;
-    font-weight: 700;
-    
-  }
-  h2 {
-    font-size: 18px;
-  }
-  h3 {
-    font-size: 15px;
-  }
  
   .col-sm-6 {
-    font-size: 15px;
-    margin: 0 auto;
-    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
   }
 
   p {
-    font-size: 13px;
+    font-size: 16px;
   }
  
-  .about {
-    font-size: 15px;
-  }
-}
-
 .col-sm-6 {
-  background-color: rgb(225, 237, 243);
+  background-color: linear-gradient(95deg, rgb(251, 254, 251) 0%, rgb(230, 189, 216) 100%);
   border-radius: 10px;
 }
-.about {
-  font-size: 20px;
+
+.ImageBackgroundWrap {
+
+  background-size: contain;
+  position: relative;
+  z-index: 1;
+  background-image: url("./img/me.jpg");
+  background-position:top;
+ 
 }
+
+.ImageInnerWrap {
+
+  padding-top: 30%;
+
+}
+.about{
+  font-size: 12px;
+  margin:1%; 
+}
+.TextBackground {
+  background-color: rgba(124, 124, 124, 0.83);
+
+   color: white;
+
+  
+}
+}
+
+
