@@ -7,45 +7,24 @@ body {
    background: linear-gradient(95deg, rgb(241,237,232) 0%, rgba(153, 149, 142, 0.437) 100%);
 }
 
-.Background-fixed {
-  background-position: center;
-}
-.ImageBackgroundWrap {
-  width: 100%;
-  height: auto;
-  background-size: contain;
-  position: relative;
-
-  background-image: url("./img/me.png");
-  background-position: top center;
-  background-repeat: no-repeat;
-  
-}
-
-.ImageInnerWrap {
-  position: relative;
-  max-width: 40%;
-  padding-top: 20%;
-  padding-left: 6%;
-  padding-bottom: 5%;
-}
-.TextBackground {
-  background-color: rgba(209, 207, 204, 0.841);
-   padding: 5%;
-   color:black;
-   text-align: center;
-   margin:0 auto;
-  
-}
-.about{
+.about , .contact{
   font-size: 25px;
   margin:3%;
   font-weight: 500;
   background-color: rgba(255, 253, 253, 0.582);
 }
- .about:hover{
+.contact:hover , .about:hover{
 background-color: rgb(77, 70, 70);
 color: white;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a{
+  border-radius: 5px;
+  padding:5px;
+  margin-bottom: 10px;;
 }
 
 .navbar-brand{
@@ -54,9 +33,14 @@ color: white;
   color: white;
 }
 
-
-
-
+img {
+  max-width:50%;
+  height:auto;
+  margin-right:15px;
+ border-radius:10px;
+  float:left
+  
+}
 
 @media only screen and (max-width:768px){
  
@@ -83,15 +67,10 @@ color: white;
   border-radius: 10px;
   width: 100%;
 }
-.ImageInnerWrap {
-    max-width: 56%;
-    padding-top: 10%;
-    padding-left: 6%;
-    padding-bottom: 5%;
-}
 .about{
- display: none;
+  display:none
 }
+
 
 }
 
