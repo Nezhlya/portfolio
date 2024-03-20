@@ -124,12 +124,14 @@ img {
   flex-direction:column ;
 }
 .buttons{
+  position: absolute;
+  bottom: 0;
   align-items: end;
   justify-content:center;
 }
 .btn-page{
   background-color: black;
-  
+  opacity: 80%;
   color: white;
 }
 
